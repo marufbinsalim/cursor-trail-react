@@ -1,6 +1,6 @@
 {
   "name": "react-cursor-trail",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Animated cursor trail components and hooks for React, powered by Framer Motion",
   "keywords": [
     "react",
