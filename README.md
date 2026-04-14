@@ -1,7 +1,7 @@
-# react-cursor-trail
+# cursor-trail-react
 
-[![npm version](https://img.shields.io/npm/v/react-cursor-trail.svg)](https://www.npmjs.com/package/react-cursor-trail)
-[![license](https://img.shields.io/npm/l/react-cursor-trail.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/cursor-trail-react.svg)](https://www.npmjs.com/package/cursor-trail-react)
+[![license](https://img.shields.io/npm/l/cursor-trail-react.svg)](./LICENSE)
 
 Animated cursor trail components and hooks for React, powered by [Framer Motion](https://www.framer.com/motion/). Build custom cursors, hover effects, and interactive trail zones with spring physics — all in a composable, type-safe API.
 
@@ -22,11 +22,11 @@ Animated cursor trail components and hooks for React, powered by [Framer Motion]
 ## Installation
 
 ```bash
-npm install react-cursor-trail framer-motion
+npm install cursor-trail-react framer-motion
 # or
-yarn add react-cursor-trail framer-motion
+yarn add cursor-trail-react framer-motion
 # or
-pnpm add react-cursor-trail framer-motion
+pnpm add cursor-trail-react framer-motion
 ```
 
 > **Peer dependencies:** `react >= 17`, `react-dom >= 17`, `framer-motion >= 10`
@@ -41,7 +41,7 @@ Wrap your app in `CursorTrailProvider`, then drop in a trail component:
 import {
   CursorTrailProvider,
   CursorCircularTrail,
-} from 'react-cursor-trail';
+} from 'cursor-trail-react';
 
 export default function App() {
   return (
@@ -92,7 +92,7 @@ A ready-to-use circular cursor that grows when hovering interactive elements.
 Activates a custom trail node when the cursor enters a zone. Supports all common HTML elements via dot notation.
 
 ```tsx
-import { CursorTrailArea } from 'react-cursor-trail';
+import { CursorTrailArea } from 'cursor-trail-react';
 
 const HoverLabel = () => (
   <div style={{ position: 'fixed', /* position via useCursorTrail */ }}>
@@ -114,7 +114,7 @@ const HoverLabel = () => (
 Factory for building fully custom trail components. Provides spring-tracked `x`/`y` and `isHoveringInteractive` out of the box.
 
 ```tsx
-import { createCursorTrail } from 'react-cursor-trail';
+import { createCursorTrail } from 'cursor-trail-react';
 import { motion } from 'framer-motion';
 
 const EmojiTrail = createCursorTrail(({ springX, springY }) => (
@@ -144,7 +144,7 @@ const EmojiTrail = createCursorTrail(({ springX, springY }) => (
 Low-level hook for accessing cursor state directly.
 
 ```tsx
-import { useCursorTrail } from 'react-cursor-trail';
+import { useCursorTrail } from 'cursor-trail-react';
 
 function MyCursor() {
   const {
@@ -174,7 +174,7 @@ Must be used inside `<CursorTrailProvider>`.
 | `lazy`    | Slow, floaty                 |
 
 ```tsx
-import { SPRING_SNAPPY, SPRING_SMOOTH, SPRING_LAZY, resolveSpring } from 'react-cursor-trail';
+import { SPRING_SNAPPY, SPRING_SMOOTH, SPRING_LAZY, resolveSpring } from 'cursor-trail-react';
 ```
 
 ---
@@ -187,7 +187,7 @@ import {
   CursorTrailArea,
   createCursorTrail,
   useCursorTrail,
-} from 'react-cursor-trail';
+} from 'cursor-trail-react';
 import { motion } from 'framer-motion';
 
 const MagneticDot = createCursorTrail(({ springX, springY, isHoveringInteractive }) => (
@@ -228,4 +228,4 @@ export default function App() {
 ## License
 
 MIT
-# react-cursor-trail
+# cursor-trail-react

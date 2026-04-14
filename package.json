@@ -1,11 +1,11 @@
 {
-  "name": "react-cursor-trail",
+  "name": "cursor-trail-react",
   "version": "0.0.1",
   "description": "Animated cursor trail components and hooks for React, powered by Framer Motion",
   "keywords": [
     "react",
     "cursor",
-    "react-cursor-trail",
+    "cursor-trail-react",
     "framer-motion",
     "animation",
     "mouse",
@@ -17,11 +17,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marufbinsalim/react-cursor-trail"
+    "url": "https://github.com/marufbinsalim/cursor-trail-react"
   },
-  "homepage": "https://github.com/marufbinsalim/react-cursor-trail#readme",
+  "homepage": "https://github.com/marufbinsalim/cursor-trail-react#readme",
   "bugs": {
-    "url": "https://github.com/marufbinsalim/react-cursor-trail/issues"
+    "url": "https://github.com/marufbinsalim/cursor-trail-react/issues"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
